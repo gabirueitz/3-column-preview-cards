@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --color1: hsla(0, 0%, 100%, 0.75);
+    --color2: hsl(0, 0%, 95%);
+    --color-b1: hsl(31, 77%, 52%);
+    --color-b2: hsl(184, 100%, 22%);
+    --color-b3: hsl(179, 100%, 13%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.cards {
+    max-width: 900px;
+    display: flex;
+}
+
+.box {
+    padding: 45px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--color2);
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.box p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color1);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.box1 {
+    background-color: var(--color-b1);
+    border-radius: 15px 0 0 15px;
+}
+
+.box2 {
+    background-color: var(--color-b2);
+}
+
+.box3 {
+    background-color: var(--color-b3);
+    border-radius: 0 15px 15px 0;
+}
+
+
+.button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--color2);
+    border: 0;
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+}
+
+.button:hover {
+    border: 2px solid var(--color2);
+    color: var(--color2);
+}
+
+.button1 {
+    color: var(--color-b1);
+}
+
+.button1:hover {
+    background-color: var(--color-b1);
+}
+
+.button2 {
+    color: var(--color-b2);
+}
+
+.button2:hover {
+    background-color: var(--color-b2);
+}
+
+.button3 {
+    color: var(--color-b3);
+}
+
+.button3:hover {
+    background-color: var(--color-b3);
+}
+
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 650px) {
+    body {
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .box {
+        max-width: 350px;
+        height: 450px;
+    }
+
+    .box p {
+        font-size: 17px;
+    }
+
+    .box1 {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .box3 {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .button {
+        font-family: 'Lexend Deca', sans-serif;
+        background-color: var(--color2);
+        border: 0;
+        border-radius: 25px;
+        width: 140px;
+        height: 40px;
+    }
+}
